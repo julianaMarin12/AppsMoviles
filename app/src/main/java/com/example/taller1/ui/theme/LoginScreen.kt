@@ -1,5 +1,6 @@
 package com.example.taller1.ui.theme
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.*
@@ -17,7 +18,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.compose.foundation.clickable
-import com.example.taller1.ui.theme.RegisterScreen
+import androidx.compose.ui.res.painterResource
+import com.example.taller1.R
+
+//import com.example.taller1.ui.theme.RegisterScreen
 
 
 @Composable
@@ -33,7 +37,11 @@ fun LoginScreen(navController: NavController) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         // Logo y Título
-        Text("🔒", fontSize = 50.sp) // Icono de escudo (puedes cambiarlo por un logo)
+        Image(
+            painter = painterResource(id = R.drawable.logo_whitout_background),
+            contentDescription = "Logo",
+            modifier = Modifier.size(240.dp)
+        )
         Text("RED SEGURA", fontSize = 24.sp, color = Color.Red)
         Spacer(modifier = Modifier.height(16.dp))
         Text("Iniciar Sesión", fontSize = 20.sp, color = Color.Black)
