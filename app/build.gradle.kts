@@ -64,6 +64,10 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-
+    implementation ("io.coil-kt:coil-compose:2.1.0")  // Dependencia para Coil con Jetpack Compose
+    // Iconos predeterminados de Material Icons (ya los tienes probablemente)
+    implementation ("androidx.compose.material:material-icons-core:1.5.0")
+    // Para tener acceso a todos los íconos rellenos (filled)
+    implementation ("androidx.compose.material:material-icons-extended:1.5.0")
 
 }
