@@ -5,6 +5,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+//noinspection UsingMaterialAndMaterial3Libraries
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.LocationOn
@@ -28,10 +29,6 @@ fun CreateReportScreen() {
     var reportTitle by remember { mutableStateOf("") }
     var reportDescription by remember { mutableStateOf("") }
     var isImportant by remember { mutableStateOf(false) }
-    val scaffoldState = rememberScaffoldState()
-    val scope = rememberCoroutineScope()
-    val sideMenu = SideMenu()
-    val title = "Reportes"
 
     // Estado para almacenar una única imagen
     var selectedImageUri by remember { mutableStateOf<Uri?>(null) }
