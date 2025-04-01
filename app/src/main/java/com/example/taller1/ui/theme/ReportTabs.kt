@@ -52,7 +52,7 @@ fun ReportTabs() {
 
             // Mostrar el contenido de cada pestaña
             when (selectedTabIndex) {
-                0 -> ProfileScreen()  // Aquí pones tu pantalla de "Mis reportes"
+                0 -> MyReportScreen()  // Aquí pones tu pantalla de "Mis reportes"
                 1 -> CreateReportScreenPreview()  // Aquí pones tu pantalla de "Crear reporte"
             }
         }
